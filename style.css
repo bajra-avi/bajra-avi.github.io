@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Inter';
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f6fa;
+}
+
+/* .head:nth-child(2){
+    flex: 2;
+}
+.head:not(:nth-child(2)){
+    flex: 1;
+} */
+ul{
+    display: flex;
+    list-style: none;
+    gap: 2.15rem;
+    color: #858a8f;
+    /* font-size: 1.5rem; */
+    
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(81, 57, 57);
+}
+/* .logo{
+    margin-left: 3rem;
+} */
+.button_get_started button{
+    /* margin-right: 3rem; */
+    padding: 0.6rem 2rem;
+    border-radius: 0.25rem;
+    color: white;
+    background: #0176FF;
+    border: none;
+    font-weight: 600;
+}
+/* The cover section starts here */
+/* ================================================================================================ */
+.cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f6fa;
+    padding-bottom: 6rem;
+}
+
+.cover .cover-heading{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.cover .cover-details p{
+    text-align: center;
+    color: #858A8F;
+    margin-bottom: 3.5rem;
+    line-height: 1.75rem;
+}
+.cover-features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+.cover .cover_features .email_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.email_us, .drop_in, .call_any_time{
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.email_us h1, .drop_in h1, .call_any_time h1{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.email_us p, .drop_in p, .call_any_time p{
+    padding: 1rem 0;
+    color: #858A8F;
+
+}
+.email_us .message a, .drop_in .message a, .call_any_time .message a{
+    color: #0176FF;
+    text-decoration: none;
+}
+/* Form css starts here */
+/* ======================================================================================================= */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+/* .form h1{
+    padding-top: 5rem;
+} */
+.form p{
+    padding-top: 2rem;
+    color: #858A8F;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 38%;
+}
+
+form .first_inputs, form .second_inputs{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    
+}
+
+form .first_inputs input, form .second_inputs input,form textarea{
+    padding: 10px;
+    border-radius: 0.3rem;
+    border: 1px solid #d3d5de;
+    outline: none;
+    margin-top: 1.15rem;
+    width: 100%;
+}
+form textarea{
+    margin-right: 1rem;
+    width: 97%;
+}
+.bottom-input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+    color: #858a8f;
+}
+.terms{
+    display: flex;
+    gap: 0.25rem;
+}
+.terms input{
+    transform: scale(1.1);
+    width: 2rem;
+}
+.terms label a{
+    text-decoration: none;
+    color: #858a8f;
+}
+
+.submit{
+    padding: 0.4rem 2.25rem;
+    border-radius: 0.25rem;
+    color: white;
+    background: #0176FF;
+    border: none;
+    font-weight: 600;
+}
+/* Footer css */
+/* ============================================================================================ */
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    color: #858a8f;
+    margin-bottom: 3rem;
+ }
+footers{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* word-spacing: 1rem; */
+    
+    
+}
+footers .footer1 img{
+    width: 7.2rem;
+    /* margin-top: 0; */
+}
+footers .footer1 p{
+    margin-top: 0.65rem;
+    margin-bottom: 1.4rem;
+    line-height: 1.45rem;
+}
+footers .footer .social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footers .footer .social-media img{
+    width: 2.15rem;
+    margin-top: 0;
+}
+footers .footer .top{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+ .footer2 ul, .footer3 ul, .footer4 ul, .footer5 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+    gap: 1.5rem;
+    
+ }
+ .footer2 ul li, .footer3 ul li, .footer4 ul li, .footer5 ul li{
+    line-height: 0.25rem;
+    
+ }
+ .footer2 ul li a, .footer3 ul li a, .footer4 ul li a, .footer5 ul li a{
+   color: #858a8f;
+ }
+
+ 
+ .copyright{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 6rem;
+ }
