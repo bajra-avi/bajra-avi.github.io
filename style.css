@@ -19,7 +19,10 @@ header{
 .head:not(:nth-child(2)){
     flex: 1;
 } */
-ul{
+.hamburger{
+    display: none;
+}
+.nav-links{
     display: flex;
     list-style: none;
     gap: 2.15rem;
@@ -80,6 +83,7 @@ li a{
 .email_us, .drop_in, .call_any_time{
     padding: 1.5rem;
     background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .email_us h1, .drop_in h1, .call_any_time h1{
@@ -195,6 +199,7 @@ footers .footer1 p{
     margin-top: 0.65rem;
     margin-bottom: 1.4rem;
     line-height: 1.45rem;
+    /* text-wrap: wrap; */
 }
 footers .footer .social-media{
     display: flex;
@@ -210,6 +215,9 @@ footers .footer .top{
     color: black;
     font-weight: bold;
 }
+.footer2,.footer3, .footer4, .footer5{
+    margin: 1.2rem;
+}
  .footer2 ul, .footer3 ul, .footer4 ul, .footer5 ul{
     display: flex;
     flex-direction: column;
@@ -220,10 +228,12 @@ footers .footer .top{
  }
  .footer2 ul li, .footer3 ul li, .footer4 ul li, .footer5 ul li{
     line-height: 0.25rem;
+    list-style: none;
     
  }
  .footer2 ul li a, .footer3 ul li a, .footer4 ul li a, .footer5 ul li a{
    color: #858a8f;
+   list-style: none;
  }
 
  
@@ -231,4 +241,80 @@ footers .footer .top{
     display: flex;
     justify-content: flex-start;
     margin-left: 6rem;
+ }
+
+ /* Responsive Design */
+ @media(max-width:800px){
+    .hamburger{
+        display: block;
+        font-size: 2rem;
+    }
+    .nav-links{
+        display: none;
+    }
+    /* .cover .cover-heading{
+        margin: 0;
+    } */
+    .cover .cover-heading h1{
+        text-wrap: wrap;
+        /* margin-top: 1rem; */
+    }
+    .cover .cover-details p{
+        text-wrap: wrap;
+    }
+    .cover-features{
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    .form form{
+        width: 80%;
+    }
+    .cover .cover-heading{
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+    .terms label{
+        text-decoration: none;
+        color: #858a8f;
+        font-size: 0.75rem;
+    }
+    .terms input{
+        transform: scale(0.6);
+        width: 2rem;
+    }
+    .submit{
+        padding: 0.4rem 1.5rem;
+        border-radius: 0.25rem;
+        color: white;
+        background: #0176FF;
+        border: none;
+        font-weight: 600;
+    }
+    /* Footer */
+    footer{
+        font-size: 0.55rem;
+    }
+    footers{
+        margin-top: 3rem;
+    }
+    footers .footer .top{
+        font-size: 0.85rem;
+    }
+    .footer2 ul, .footer3 ul, .footer4 ul, .footer5 ul{
+        font-size: 0.55rem;
+        list-style: none;
+    }
+    .footer2,.footer3, .footer4, .footer5{
+       margin-top: 1.3rem;
+    }
+    footers .footer .social-media img{
+        width: 1.5rem;
+    }
+    .copyright {
+        margin: 1.5rem;
+    }
+    
  }
