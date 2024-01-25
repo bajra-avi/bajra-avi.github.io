@@ -31,16 +31,22 @@ header{
     
 }
 
+.nav-links li a{
+    text-decoration: none;
+    /* color: rgb(81, 57, 57); */
+    color: #858a8f;
+    font-weight: 600;
+}
+
 li a{
     text-decoration: none;
-    color: rgb(81, 57, 57);
 }
 /* .logo{
     margin-left: 3rem;
 } */
 .button_get_started button{
     /* margin-right: 3rem; */
-    padding: 0.6rem 2rem;
+    padding: 0.75rem 2rem;
     border-radius: 0.25rem;
     color: white;
     background: #0176FF;
@@ -58,10 +64,11 @@ li a{
 }
 
 .cover .cover-heading{
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
     font-weight: 900;
     font-size: 1.5rem;
+    color: #333333;
 }
 .cover .cover-details p{
     text-align: center;
@@ -73,7 +80,7 @@ li a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 .cover .cover_features .email_us{
     display: flex;
@@ -83,12 +90,14 @@ li a{
 .email_us, .drop_in, .call_any_time{
     padding: 1.5rem;
     background-color: white;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
 }
 
 .email_us h1, .drop_in h1, .call_any_time h1{
     padding: 1rem 0;
     font-size: 1.5rem;
+    color: #333333;
 }
 .email_us p, .drop_in p, .call_any_time p{
     padding: 1rem 0;
@@ -98,6 +107,9 @@ li a{
 .email_us .message a, .drop_in .message a, .call_any_time .message a{
     color: #0176FF;
     text-decoration: none;
+}
+.message{
+    font-weight: bold;
 }
 /* Form css starts here */
 /* ======================================================================================================= */
@@ -199,7 +211,7 @@ footers .footer1 p{
     margin-top: 0.65rem;
     margin-bottom: 1.4rem;
     line-height: 1.45rem;
-    text-wrap: wrap;
+    /* text-wrap: wrap; */
 }
 footers .footer .social-media{
     display: flex;
@@ -245,6 +257,7 @@ footers .footer .top{
 
  /* Responsive Design */
  @media(max-width:800px){
+    
     .hamburger{
         display: block;
         font-size: 2rem;
@@ -252,20 +265,39 @@ footers .footer .top{
     .nav-links{
         display: none;
     }
+    .button_get_started{
+        display: none;
+    }
     /* .cover .cover-heading{
         margin: 0;
     } */
+
     .cover .cover-heading h1{
         text-wrap: wrap;
+        font-size: 1.75rem;
         /* margin-top: 1rem; */
     }
     .cover .cover-details p{
         text-wrap: wrap;
+        padding: 0 1rem;
+    }
+    .cover .cover-details p br{
+        display: none;
     }
     .cover-features{
         flex-direction: column;
         margin: 0;
         
+    }
+    .form h1{
+        font-size: 1.75rem;
+    }
+    .form p{
+        padding: 0 1rem;
+        margin-top: 1rem;
+    }
+    .form p br{
+        display: none;
     }
     .form form{
         width: 80%;
@@ -286,7 +318,7 @@ footers .footer .top{
         width: 2rem;
     }
     .submit{
-        padding: 0.4rem 1.5rem;
+        padding: 0.4rem 1rem;
         border-radius: 0.25rem;
         color: white;
         background: #0176FF;
@@ -299,26 +331,47 @@ footers .footer .top{
         line-height: 1rem;
         margin-bottom: 0;
         gap: 0;
+        padding: 1rem;
     }
     footers{
-        padding-left: 1rem;
-        margin-top: 3rem;
+        padding-left: 1.5rem;
+        margin-top: 0rem;
         justify-content: space-evenly;
         /* gap: 0.75rem; */
-        column-gap: 0.1rem;
+        column-gap: 0rem;
+    }
+    footers .footer1{
+        flex: 0 1 20%;
+    }
+    footer .footer1 p{
+        line-height: 0.8rem;
+        text-wrap: wrap;
+    }
+    footer .footer1 p br{
+        display: none;
+    }
+    footers .footer1 img{
+        width: 4.5rem;
     }
     footers .footer .top{
         font-size: 0.65rem;
     }
+    .footer2, .footer3, .footer4,.footer5{
+        margin: 0 0.5rem;
+    }
     .footer2 ul, .footer3 ul, .footer4 ul, .footer5 ul{
-        font-size: 0.45rem;
+        font-size: 0.60rem;
         list-style: none;
+        gap: 0.5rem;
     }
     .footer2 ul li, .footer3 ul li, .footer4 ul li, .footer5 ul li{
-        line-height: 0.5rem;
+        line-height: 0.65rem;
     }
     .footer2,.footer3, .footer4, .footer5{
-       margin-top: 1.3rem;
+       margin-top: 0.8rem;
+    }
+    footers .footer .social-media{
+        gap: 0.4rem;
     }
     footers .footer .social-media img{
         width: 1.1rem;
