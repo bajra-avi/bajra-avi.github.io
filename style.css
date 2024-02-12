@@ -242,7 +242,7 @@ footers .footer .top{
         position: absolute;
         top: 100px;
         left: 0;
-        width: 100%;
+        width: 50%;
         height: 100%;
         flex-direction: column;
         background-color: #f5f6fa;
@@ -260,14 +260,14 @@ footers .footer .top{
         display: block;
         font-size: 1.2rem;
       }
+      header{
+        justify-content: space-evenly;
+      }
     
     .hamburger{
         display: block;
-        position: absolute;
-        color: #858a8f;
-        top: 10px;
-        right: 30px;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        color: #858a8f
     }
     .button_get_started{
         display: none;
