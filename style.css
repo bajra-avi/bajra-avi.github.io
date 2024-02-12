@@ -12,13 +12,6 @@ header{
     align-items: center;
     background-color: #f5f6fa;
 }
-
-/* .head:nth-child(2){
-    flex: 2;
-}
-.head:not(:nth-child(2)){
-    flex: 1;
-} */
 .hamburger{
     display: none;
 }
@@ -27,13 +20,11 @@ header{
     list-style: none;
     gap: 2.15rem;
     color: #858a8f;
-    /* font-size: 1.5rem; */
     
 }
 
 .nav-links li a{
     text-decoration: none;
-    /* color: rgb(81, 57, 57); */
     color: #858a8f;
     font-weight: 600;
 }
@@ -41,11 +32,7 @@ header{
 li a{
     text-decoration: none;
 }
-/* .logo{
-    margin-left: 3rem;
-} */
 .button_get_started button{
-    /* margin-right: 3rem; */
     padding: 0.75rem 2rem;
     border-radius: 0.25rem;
     color: white;
@@ -122,9 +109,6 @@ li a{
     margin-bottom: 4rem;
     margin-top: 5rem;
 }
-/* .form h1{
-    padding-top: 5rem;
-} */
 .form p{
     padding-top: 2rem;
     color: #858A8F;
@@ -199,19 +183,16 @@ footers{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    /* word-spacing: 1rem; */
     
     
 }
 footers .footer1 img{
     width: 7.2rem;
-    /* margin-top: 0; */
 }
 footers .footer1 p{
     margin-top: 0.65rem;
     margin-bottom: 1.4rem;
     line-height: 1.45rem;
-    /* text-wrap: wrap; */
 }
 footers .footer .social-media{
     display: flex;
@@ -257,25 +238,44 @@ footers .footer .top{
 
  /* Responsive Design */
  @media(max-width:800px){
+    .nav-links {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background-color: #f5f6fa;
+        transition: 0.5s all ease;
+        align-items: center;
+        transform: translateX(-800px);
+        padding-top: 60px;
+      }
+      .nav-links.show {
+        transform: translateX(0px);
+        transition: 0.5s all ease;
+      }
+      .nav-links li a {
+        margin-bottom: 10px;
+        display: block;
+        font-size: 1.2rem;
+      }
     
     .hamburger{
         display: block;
+        position: absolute;
+        color: #858a8f;
+        top: 10px;
+        right: 30px;
         font-size: 2rem;
-    }
-    .nav-links{
-        display: none;
     }
     .button_get_started{
         display: none;
     }
-    /* .cover .cover-heading{
-        margin: 0;
-    } */
 
     .cover .cover-heading h1{
         text-wrap: wrap;
         font-size: 1.75rem;
-        /* margin-top: 1rem; */
     }
     .cover .cover-details p{
         text-wrap: wrap;
@@ -381,3 +381,6 @@ footers .footer .top{
     }
     
  }
+.block-scroll{
+    overflow: hidden;
+}
